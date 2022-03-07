@@ -121,7 +121,7 @@ Don't shoot yourself in the foot - use the CLI! That being said, here goes:
 
 Using LaunchMyApp with PhoneGap Build requires you to add the following xml to your `config.xml` to use the latest version of this plugin (replace `mycoolapp` by a nice scheme you want to have your app listen to):
 ```xml
-<gap:plugin name="cordova-plugin-customurlscheme" source="npm">
+<gap:plugin name="@zenput/cordova-plugin-customurlscheme" source="npm">
   <param name="URL_SCHEME" value="mycoolapp" />
 </gap:plugin>
 ```
@@ -134,7 +134,7 @@ NOTE: When Hydration is enabled at PGB, this plugin may not work.
 In order to be able to restore the plugin settings on `cordova plugin add`, one need to add the following feature into config.xml. Note that if you added the plugin with the `--save` param you will find this in your `config.xml` already, except for the `variable` tag which is likely a `param` tag. [Change that.](https://github.com/EddyVerbruggen/Custom-URL-scheme/issues/76)
 ```xml
   <feature name="Custom URL scheme">
-    <param name="id" value="cordova-plugin-customurlscheme" />
+    <param name="id" value="@zenput/cordova-plugin-customurlscheme" />
     <param name="url" value="https://github.com/EddyVerbruggen/Custom-URL-scheme.git" />
     <variable name="URL_SCHEME" value="mycoolapp" /><!-- change as appropriate -->
   </feature>

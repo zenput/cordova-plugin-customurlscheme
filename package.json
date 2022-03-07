@@ -1,9 +1,9 @@
 {
   "name": "@zenput/cordova-plugin-customurlscheme",
-  "version": "4.3.0-zp1",
+  "version": "4.3.0-zp2",
   "description": "Launch your app by using this URL:  mycoolapp://, you can add a path and even pass params like this: mycoolerapp://somepath?foo=bar",
   "cordova": {
-    "id": "cordova-plugin-customurlscheme",
+    "id": "@zenput/cordova-plugin-customurlscheme",
     "platforms": [
       "ios",
       "android",
